@@ -1,0 +1,32 @@
+<h2>Two Way Data Binding</h2>
+
+<section>
+    <mat-card style="margin:20px;">
+        <mat-card-content>
+            <form >
+                <mat-form-field style="width: 100%;">
+                    <input matInput placeholder="First name" name='firstname'
+                    [(ngModel)]="client.firstname">
+                </mat-form-field>
+                <mat-form-field style="width: 100%;">
+                        <input matInput placeholder="Last name" name='lastname'
+                        [(ngModel)]="client.lastname">
+                </mat-form-field>
+                <mat-form-field style="width: 100%;">
+                        <input matInput placeholder="Address" name='address'
+                        [(ngModel)]="client.address">
+                </mat-form-field>
+                <mat-form-field style="width: 100%;">
+                        <input matInput placeholder="Age" type="number" name='age'
+                        [(ngModel)]="client.age">
+                </mat-form-field>
+            </form>
+        </mat-card-content>
+        <mat-card-actions>
+            <p>First Name: {{client.firstname}}</p>
+            <p>Last Name: {{client.lasttname}}</p>
+            <p>Address: {{client.address}}</p>
+            <p>Age: {{client.age}}</p>
+        </mat-card-actions>
+    </mat-card>
+</section>
